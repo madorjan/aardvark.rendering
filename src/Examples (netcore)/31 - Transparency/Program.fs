@@ -63,6 +63,10 @@ module Program =
             |> Sg.translate offset.X offset.Y 2.0
         )
         |> Sg.ofList
+        |> Sg.shader {
+                    do! DefaultSurfaces.trafo
+                    do! DefaultSurfaces.sgColor
+                }
 
     [<EntryPoint>]
     let main argv =

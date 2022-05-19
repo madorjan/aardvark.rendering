@@ -206,8 +206,8 @@ module WeightedBlended =
                 |> Sg.viewTrafo scene.viewTrafo
                 |> Sg.projTrafo scene.projTrafo
                 |> Sg.shader {
-                    do! DefaultSurfaces.trafo
-                    do! DefaultSurfaces.sgColor
+                    //do! DefaultSurfaces.trafo
+                    //do! DefaultSurfaces.sgColor
                     do! Shaders.weightedBlend
                 }
 
